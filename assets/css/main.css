@@ -58,6 +58,8 @@
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
+		display: flex;
+		flex-wrap: wrap;
 	}
 
 	.row > * {
@@ -4047,7 +4049,7 @@ article header.major {
 	background: linear-gradient(180deg, #FF828B 0%, #5C8CA7 100%);
 }
 #reviews{
-	height: 415px;
+	height: 685px;
 	overflow: auto;    
 }
 #reviews::-webkit-scrollbar-button {
@@ -4083,6 +4085,7 @@ width: 4px;
 }
 .report{
 	padding-top:5px;
+	margin: 20px 0;
 }
 .align-items-center {
 	align-items: center;
@@ -4122,7 +4125,8 @@ p.reports-counter {
 }
 
 .report-person img {
-    border-radius: 50%;
+	border-radius: 50%;
+	height: 80%;
 }
 
 .report-person p {
@@ -4168,10 +4172,19 @@ p.reports-counter {
 }
 
 .faq-question p {
-    margin: 30px 0;
+	margin-bottom: 0;
     text-align: center;
     font-size: 2.25rem;
     font-weight: 100;
+}
+
+.question {
+	padding: 30px 0;
+	cursor: pointer;
+}
+
+.question:hover {
+	background-color: #EB7368;
 }
 
 .faq {

@@ -7,7 +7,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/faq.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -222,34 +221,28 @@
 							</section>
 
 							<section id="forme">
-								<div class="faq">
+								<div class="row">
 									<div class="6u faq-answer-container">
-											<div class = "align-center ">
-											<div class = "faq-answer answer showing" id = "answer_one">
-												<h1>Answer 1</h1>
-												<h2>Lorem ipsum dolor sit amet.</h2>
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, accusamus iusto suscipit dolorem deleniti odio veritatis at sunt nam libero explicabo, culpa quisquam rem ea blanditiis. Adipisci eum tenetur tempore.</p>
-											</div>
-											<div class = "faq-answer answer" id = "answer_two">
-												<h1>Answer 2</h1>
-												<h2>Lorem ipsum dolor sit amet.</h2>
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, accusamus iusto suscipit dolorem deleniti odio veritatis at sunt nam libero explicabo, culpa quisquam rem ea blanditiis. Adipisci eum tenetur tempore.</p>
-											</div>
-											<div class = "faq-answer answer" id = "answer_three">
-												<h1>Answer 3</h1>
-												<h2>Lorem ipsum dolor sit amet.</h2>
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, accusamus iusto suscipit dolorem deleniti odio veritatis at sunt nam libero explicabo, culpa quisquam rem ea blanditiis. Adipisci eum tenetur tempore.</p>
-											</div>
-											</div>
+										<div class = "faq-answer align-center">
+											<h1>F.A.Q.</h1>
+											<h2>Lorem ipsum dolor sit amet.</h2>
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, accusamus iusto suscipit dolorem deleniti odio veritatis at sunt nam libero explicabo, culpa quisquam rem ea blanditiis. Adipisci eum tenetur tempore.</p>
+										</div>
 									</div>
-									<div class="6u faq-question">
-										<div id = "question_one">
+									<div class="6u row faq-question align-items-center">
+										<div class="question 12u"
+										data-question="Вопрос номер один?"
+										data-answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, consequuntur!">
 											<p>Вопрос номер один?</p>
 										</div>
-										<div id = "question_two">
+										<div class="question 12u"
+										data-question="Вопрос номер два?"
+										data-answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, quaerat?">
 											<p>Вопрос номер два?</p>
 										</div>
-										<div id = "question_three">
+										<div class="question 12u"
+										data-question="Вопрос номер три?"
+										data-answer="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, commodi.">
 											<p>Вопрос номер три?</p>
 										</div>
 									</div>
@@ -267,15 +260,15 @@
 										<form autocomplete="off" method="post" action="#">
 											<div class="field half first">
 												<label for="name">Имя</label>
-												<input type="text" name="name" id="name" />
+												<input autocomplete="name" type="text" name="name" id="name" />
 											</div>
 											<div class="field half">
 												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
+												<input autocomplete="email" type="text" name="email" id="email" />
 											</div>
 											<div class="field">
 												<label for="message">Сообщение</label>
-												<textarea name="message" id="message" rows="6"></textarea>
+												<textarea autocomplete="off" name="message" id="message" rows="6"></textarea>
 											</div>
 											<ul class="actions">
 												<li><input type="submit" value="Отправить" /></li>
