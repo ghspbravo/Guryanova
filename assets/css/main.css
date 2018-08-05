@@ -19,6 +19,7 @@
 
 	body {
 		line-height: 1;
+		overflow-x: hidden;
 	}
 
 	ol, ul {
@@ -4059,21 +4060,32 @@ width:5px;
 height:0px
 }
 
-#reviews::-webkit-scrollbar-track {
+body::-webkit-scrollbar-button {
+	background-image:url('');
+	background-repeat:no-repeat;
+	width:10px;
+	height:0px
+	}
+
+#reviews::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
 background-color:#FFFFFF
 }
 
-#reviews::-webkit-scrollbar-thumb {
+#reviews::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
 -webkit-border-radius: 0px;
 border-radius: 0px;
 background-color:#f25757;
 }
 
-#reviews::-webkit-scrollbar-thumb:hover{
+#reviews::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover{
 background-color:#eb6a6a;
 }
 
-#reviews::-webkit-resizer{
+#reviews::-webkit-resizer,
+body::-webkit-scrollbar-button{
 background-image:url('');
 background-repeat:no-repeat;
 width:4px;
@@ -4082,6 +4094,10 @@ height:0px
 
 #reviews::-webkit-scrollbar{
 width: 4px;
+}
+
+body::-webkit-scrollbar{
+	width: 10px;
 }
 .report{
 	padding-top:5px;
