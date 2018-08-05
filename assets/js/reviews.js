@@ -34,16 +34,8 @@ let showAnswer = (question, answer) => {
 	answerWrapper[1].innerHTML = question
 	answerWrapper[2].innerHTML = answer
 }
-var scrollInterval = setInterval(scroll_in_div, 5000); // задали время промотки
+var scrollInterval = setInterval(scroll_in_div, 5000);
 var scroll_div = document.querySelector('#reviews'); 
-// scroll_div.scrollTo({ //вверх
-    // top: 2000,
-    // behavior: "smooth"
-// });
-// scroll_div.scrollTo({ //вниз
-    // top: 0,
-    // behavior: "smooth"
-// });
 function scroll_in_div (){
 	scroll_div.scrollTo({ //вверх
     top: 2000,
@@ -54,3 +46,13 @@ function scroll_in_div (){
 		behavior: "smooth"
 });
 }
+
+scroll_div.addEventListener("mouseover",function()
+{
+	clearInterval(scrollInterval);
+}); 
+
+scroll_div.addEventListener("mouseout",function()
+{
+	scrollInterval = setInterval(scroll_in_div, 5000);
+}); 
