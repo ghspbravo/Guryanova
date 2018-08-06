@@ -310,9 +310,9 @@
 
 	@media screen and (max-width: 1680px) {
 
-		.model {
+		/* .model {
 			transform: scale(2.9) !important
-		}
+		} */
 
 		.row > * {
 			padding: 0 0 0 2em;
@@ -2343,6 +2343,7 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+			z-index: 10;
 		}
 
 			ul.actions li {
@@ -4031,11 +4032,11 @@
 
 .model {
 	position: absolute;
-    top: -40%;
-    right: 0;
-    height: 100%;
-    transform-origin: center;
-    transform: scale(2.6);
+    top: 0;
+	right: -10%;
+	transform: translateY(-45%);
+    /* transform-origin: center; */
+    /* transform: scale(2.6); */
 }
 
 .model img {
@@ -4182,7 +4183,6 @@ p.reports-counter {
 
 .faq-answer-container {
     padding: 0 150px;
-	height:480px;
 	overflow:hidden; 
 	position:relative; 
 }
